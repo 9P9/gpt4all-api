@@ -18,12 +18,12 @@ If you're using a different platform ensure you use the correct binary for your 
 - [GPT4ALL](https://github.com/nomic-ai/gpt4all)
 Then Adjust the code in server.js to fit: 
 
-`	
-		let GPT = new GPT4('./ai/gpt4all-lora-quantized-win64'); //Windows
-		let GPT = new GPT4('./ai/gpt4all-lora-quantized-OSX-m1'); //M1 Mac/OSX
-		let GPT = new GPT4('./ai/gpt4all-lora-quantized-OSX-intel'); //Intel Mac/OSX
-		let GPT = new GPT4('./ai/gpt4all-lora-quantized-linux-x86'); //Linux
-`	
+```	
+	let GPT = new GPT4('./ai/gpt4all-lora-quantized-win64'); //Windows
+	let GPT = new GPT4('./ai/gpt4all-lora-quantized-OSX-m1'); //M1 Mac/OSX
+	let GPT = new GPT4('./ai/gpt4all-lora-quantized-OSX-intel'); //Intel Mac/OSX
+	let GPT = new GPT4('./ai/gpt4all-lora-quantized-linux-x86'); //Linux
+```
 
 ### How to get the GPT4ALL model! 
 
@@ -56,8 +56,8 @@ async function main(){
 	console.log(res.data);
 }
 main();
-```
 
+```
 This will return a JSON object containing the generated text and the time taken to generate it.
 
 To use the /gpt/:prompt endpoint, make a GET request to http://localhost/gpt/:prompt, where :prompt is the prompt you want to use. For example:
