@@ -13,15 +13,18 @@
     npm install
     
 ### Different Platform Use:
-	If you're using a different platform ensure you use the correct binary for your OS from:
-		- [GPT4ALL](https://github.com/nomic-ai/gpt4all)
-	Then Adjust the code in server.js to fit: 
-	
+
+If you're using a different platform ensure you use the correct binary for your OS from: 
+- [GPT4ALL](https://github.com/nomic-ai/gpt4all)
+Then Adjust the code in server.js to fit: 
+
+`	
 		let GPT = new GPT4('./ai/gpt4all-lora-quantized-win64'); //Windows
 		let GPT = new GPT4('./ai/gpt4all-lora-quantized-OSX-m1'); //M1 Mac/OSX
 		let GPT = new GPT4('./ai/gpt4all-lora-quantized-OSX-intel'); //Intel Mac/OSX
 		let GPT = new GPT4('./ai/gpt4all-lora-quantized-linux-x86'); //Linux
-	
+`	
+
 ### How to get the GPT4ALL model! 
 
 Download the `gpt4all-lora-quantized.bin` file from [Direct Link](https://the-eye.eu/public/AI/models/nomic-ai/gpt4all/gpt4all-lora-quantized.bin) or [[Torrent-Magnet]](https://tinyurl.com/gpt4all-lora-quantized).
@@ -35,7 +38,7 @@ Ensure the model is in the main directory! Along with exe
 
 # Usage
 
-    Start the server by running the following command:
+Start the server by running the following command:
 
 ` npm start `
 
