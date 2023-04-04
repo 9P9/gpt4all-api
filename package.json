@@ -1,0 +1,16 @@
+{
+  "name": "gpt4all-api",
+  "version": "1.0.0",
+  "description": "Local API for gpt4all",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
